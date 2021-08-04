@@ -37,9 +37,19 @@ const coin = {
   };
 
     //test if flip and toString function works
+function sampleTest() {
     let sampleFlipResult = coin.flip();
     sampleFlipResult = coin.toString();
     console.log(sampleFlipResult);
+}
+sampleTest();
+    //sample button
+    // let sampleButton = document.createElement("button");
+    // sampleButton.innerHTML = "Logs flip result on the console";
+    // document.body.append(sampleButton);
+    // sampleButton.addEventListener("click", sampleTest);
+
+
 
 //checks if my image file links works
 //let sampleImg = document.createElement("img")
@@ -67,12 +77,11 @@ const coin = {
     for (let numOfFlip = 1; numOfFlip <= 20; numOfFlip++) {
       let result = coin.flip();
       result = coin.toHTML();
-  
-      let displaySection = document.createElement("div");
-      displaySection.append(result);
+      let displayDiv = document.createElement("div");
+      displayDiv.append(result);
   
       results.push(result);
-      document.body.append(displaySection);
+      document.body.append(displayDiv);
   
     }
 }
